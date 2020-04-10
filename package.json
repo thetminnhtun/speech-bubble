@@ -1,0 +1,20 @@
+{
+  "name": "tmh_speech_bubble",
+  "version": "0.1.0",
+  "description": "This is speech bubble library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thetminnhtun/speech-bubble.git"
+  },
+  "keywords": [],
+  "author": "Thet Minn Htun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thetminnhtun/speech-bubble/issues"
+  },
+  "homepage": "https://github.com/thetminnhtun/speech-bubble#readme"
+}
