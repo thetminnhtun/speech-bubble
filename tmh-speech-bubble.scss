@@ -1,0 +1,90 @@
+// Variables
+@import "variables";
+
+// Speech Bubble
+.speech-bubble {
+    position: relative;
+    display: block;
+    /* Colors */
+    background: $bubble-bg-color;
+    color: $bubble-color;
+    /* Borders  */
+    border-radius: .4em;
+    /* Padding and Margin */
+    padding: 0.5em 1em;
+    /* Width and Height */
+    min-width: 1.5rem;
+    min-height: 1.9rem;
+    max-width: $bubble-max-width;
+    /* Fonts  */
+    overflow-wrap: break-word;
+    font-weight: normal;
+    font-style: normal;
+    font-size: $bubble-font-size;
+}
+
+// Arrow
+[data-arrow]::before {
+    content: '';
+    position: absolute;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    width: 0;
+    height: 0;
+}
+
+// Arrow Position
+[data-arrow="bottom-left"]::before {
+    top: 100%;
+    left: $bubble-position-left;
+    border-right: $border-arrow-height-1-2 solid transparent;
+    border-top: $border-arrow-height solid $bubble-bg-color;
+}
+
+[data-arrow="bottom-right"]::before {
+    top: 100%;
+    right: $bubble-position-right;
+    border-left: $border-arrow-height-1-2 solid transparent;
+    border-top: $border-arrow-height solid $bubble-bg-color;
+}
+
+[data-arrow="bottom-center"]::before {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-top: $border-arrow-height solid $bubble-bg-color;
+    border-right: $border-arrow-height-1-4 solid transparent;
+    border-left: $border-arrow-height-1-4 solid transparent;
+}
+
+[data-arrow="top-left"]::before {
+    bottom: 100%;
+    left: $bubble-position-left;
+    border-right: $border-arrow-height-1-2 solid transparent;
+    border-bottom: $border-arrow-height solid $bubble-bg-color;
+}
+
+[data-arrow="top-center"]::before {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-bottom: $border-arrow-height solid $bubble-bg-color;
+    border-right: $border-arrow-height-1-4 solid transparent;
+    border-left: $border-arrow-height-1-4 solid transparent;
+}
+
+[data-arrow="top-right"]::before {
+    bottom: 100%;
+    right: $bubble-position-right;
+    border-left: $border-arrow-height-1-2 solid transparent;
+    border-bottom: $border-arrow-height solid $bubble-bg-color;
+}

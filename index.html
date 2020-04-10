@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TMH Speech Bubble</title>
+	<link rel="stylesheet" href="tmh-speech-bubble.css">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #f2f2f2;
+		}
+		.container {
+			width: 80vw;
+			height: 100%;
+			margin: 20px auto;
+			background-color: #1a7;
+			overflow: auto;
+		}
+		.row {
+			display: flex;
+		}
+		.box {
+			width: calc(100% / 6);
+			height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- with content -->
+		<div class="row">
+			<div class="box">
+				<i class="speech-bubble" data-arrow="bottom-left">Bottom Left Arrow</i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="bottom-center">Bottom Center Arrow</i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="bottom-right">Bottom Right Arrow</i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="top-left">Top Left Arrow</i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="top-center">Top Center Arrow</i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="top-right">Top Right Arrow</i>
+			</div>
+		</div>
+		<!-- no content -->
+		<div class="row">
+			<div class="box">
+				<i class="speech-bubble" data-arrow="bottom-left"></i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="bottom-center"></i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="bottom-right"></i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="top-left"></i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="top-center"></i>
+			</div>
+			<div class="box">
+				<i class="speech-bubble" data-arrow="top-right"></i>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+// colors
+$bubble-bg-color: #fff;
+$bubble-color: #333;
+// fonts
+$bubble-font-size: 13px;
+// position
+$bubble-position-left: 5px;
+$bubble-position-right: 5px;
+// width and height of speech bubble
+$bubble-max-width: 135px;
+// width and height of arrow
+$border-arrow-height: $bubble-font-size;
+$border-arrow-height-1-2: calc(#{$border-arrow-height}/2);
+$border-arrow-height-1-4: calc(#{$border-arrow-height}/4);
