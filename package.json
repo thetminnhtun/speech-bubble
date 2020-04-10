@@ -1,6 +1,6 @@
 {
   "name": "tmh_speech_bubble",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is speech bubble library.",
   "main": "index.js",
   "scripts": {
